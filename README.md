@@ -20,4 +20,4 @@ I am currently looking to expand my skills in web development and to take on mor
 
 ## How to Reach Me
 
-I can be reached through my email address [jayapriyaeswari05@gmail.com](mailto:jayapriyaeswari05@gmail.com) or through my social media profiles on [LinkedIn](https://www.linkedin.com/in/jayapriya-s-5b2b14191/) and [GitHub](https://github.com/jayapriya).
+I can be reached through my email address [jayapriyaeswari05@gmail.com](mailto:jayapriyaeswari05@gmail.com) or through my social media profiles on [LinkedIn](https://www.linkedin.com/in/jayapriya-s-5b2b14191/) and [GitHub](https://github.com/JayapriyaSiakumar).
