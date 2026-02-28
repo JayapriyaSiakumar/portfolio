@@ -43,6 +43,8 @@ Go-Eventz is a fully featured full-stack event-management platform that enables 
 `,
       link: "https://go-event-ruddy.vercel.app/",
       github: "https://github.com/JayapriyaSiakumar/GoEvent",
+      backendLink: "https://goevent-backend.onrender.com/",
+      backendGithub: "https://github.com/JayapriyaSiakumar/GoEvent-Backend",
       tech1: "react",
       tech2: "tailwindcss",
       tech3: "mongodb",
@@ -301,6 +303,11 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
 
               {/* Links */}
               <div className="flex gap-4 mb-6 text-sm font-medium text-gray-700">
+                {selectedWork.backendLink ? (
+                  <p className="">FrontEnd : </p>
+                ) : (
+                  <></>
+                )}
                 <a
                   href={selectedWork.link}
                   className="flex items-center gap-1 hover:text-blue-600">
@@ -312,6 +319,23 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
                   <span>🐙 GitHub</span>
                 </a>
               </div>
+              {selectedWork.backendLink ? (
+                <div className="flex gap-4 mb-6 text-sm font-medium text-gray-700">
+                  <p className="">Backend : </p>
+                  <a
+                    href={selectedWork.backendLink}
+                    className="flex items-center gap-1 hover:text-blue-600">
+                    <span>🔗 Demo</span>
+                  </a>
+                  <a
+                    href={selectedWork.backendGithub}
+                    className="flex items-center gap-1 hover:text-blue-600">
+                    <span>🐙 GitHub</span>
+                  </a>
+                </div>
+              ) : (
+                <></>
+              )}
 
               {/* Technology Badges */}
               <div className="flex flex-wrap gap-2">
