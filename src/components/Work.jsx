@@ -225,16 +225,16 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
                   <span>🐙 GitHub</span>
                 </a>
               </div>
-              {selectedWork.backendLink ? (
+              {work.backendLink ? (
                 <div className="flex gap-4 mb-6 text-sm font-medium text-gray-700">
                   <p className="">Backend : </p>
                   <a
-                    href={selectedWork.backendLink}
+                    href={work.backendLink}
                     className="flex items-center gap-1 hover:text-blue-600">
                     <span>🔗 Demo</span>
                   </a>
                   <a
-                    href={selectedWork.backendGithub}
+                    href={work.backendGithub}
                     className="flex items-center gap-1 hover:text-blue-600">
                     <span>🐙 GitHub</span>
                   </a>
