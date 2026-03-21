@@ -147,8 +147,12 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
 - Well-structured components and clean project architecture.
 - Perfect for demonstrating React fundamentals, context state management, and data visualization.
 `,
-      link: "https://smarexpensetracker.netlify.app/",
-      github: "https://github.com/JayapriyaSiakumar/SmartExpenseTracker",
+      link: "https://smart-expense-tracker-frontend-lovat.vercel.app/",
+      github:
+        "https://github.com/JayapriyaSiakumar/SmartExpenseTracker-Frontend",
+      backendLink: "https://smartexpensetracker-backend-4zyg.onrender.com/",
+      backendGithub:
+        "https://github.com/JayapriyaSiakumar/SmartExpenseTracker-Backend",
       tech1: "react",
       tech2: "tailwindcss",
       tech3: "javascript",
@@ -393,6 +397,17 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
           className="w-4 hidden dark:block"
         />
       </a> */}
+      <div id="services" className="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 className="text-center mb-2 text-lg font-Ovo">What i got</h4>
+        <h2 className="text-center text-5xl font-Ovo">My Certificate</h2>
+        <div className="w-screen d-flex items-center justify-center">
+          <img
+            className="w-[60%] max-h-70 m-4"
+            src="./assets/certificate.png"
+            alt="certificate"
+          />
+        </div>
+      </div>
     </div>
   );
 }
