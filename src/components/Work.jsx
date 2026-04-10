@@ -144,6 +144,23 @@ date-fns (time formatting)`,
                   🐙 GitHub
                 </a>
               </div>
+              {item.backendLink && (
+                <div className="flex gap-4 text-sm mt-2">
+                  <a
+                    href={item.backendLink}
+                    target="_blank"
+                    className="text-blue-500">
+                    🔗 Backend
+                  </a>
+
+                  <a
+                    href={item.backendGithub}
+                    target="_blank"
+                    className="text-gray-700">
+                    🐙 Backend GitHub
+                  </a>
+                </div>
+              )}
 
               {/* Tech */}
               <div className="flex flex-wrap gap-2 mt-4">
