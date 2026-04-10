@@ -92,7 +92,7 @@ date-fns (time formatting)`,
       github: "https://github.com/JayapriyaSiakumar/ChattingApp",
       backendLink: "https://chatingapp-backend-5iaz.onrender.com/",
       backendGithub: "https://github.com/JayapriyaSiakumar/ChatingApp-Backend",
-      tech: ["React", "Context API", "Recharts"],
+      tech: ["React", "Context API", "Socket.io", "nodejs", "mongodb"],
     },
   ];
 
@@ -231,6 +231,17 @@ date-fns (time formatting)`,
                 </a>
               </div>
             )}
+
+            {/* Tech */}
+            <div className="flex flex-wrap gap-2 mt-4">
+              {selectedWork.tech.map((t, i) => (
+                <span
+                  key={i}
+                  className="text-xs px-2 py-1 bg-gray-200 rounded-full">
+                  {t}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       )}
