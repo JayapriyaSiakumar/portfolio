@@ -37,7 +37,7 @@ The application focuses on clean UI, fast rendering, and smooth user experience.
 React, TailwindCSS, MealsDB API`,
       link: "https://meals-app-bay.vercel.app/",
       github: "https://github.com/JayapriyaSiakumar/mealsApp",
-      tech: ["React", "Tailwind", "API"],
+      tech: ["React", "Tailwind", "axios", "meals db"],
     },
     {
       id: "3",
