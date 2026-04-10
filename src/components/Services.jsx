@@ -2,19 +2,19 @@ export default function Services() {
   const services = [
     {
       name: "HTML",
-      icon: "./assets/html-icon.jpeg",
+      icon: "./assets/html-icon.png",
     },
     {
       name: "CSS",
-      icon: "./assets/css-icon.jpeg",
+      icon: "./assets/css-icon.png",
     },
     {
       name: "Javascript",
-      icon: "./assets/js-icon.jpeg",
+      icon: "./assets/js-icon.png",
     },
     {
       name: "React",
-      icon: "./assets/react-icon.jpeg",
+      icon: "./assets/react-icon.png",
     },
     {
       name: "MongoDB",
@@ -22,11 +22,11 @@ export default function Services() {
     },
     {
       name: "Tailwind CSS",
-      icon: "./assets/tailwindcss-icon.jpeg",
+      icon: "./assets/tailwindcss-icon.png",
     },
     {
       name: "Node Js",
-      icon: "./assets/nodejs-icon.jpeg",
+      icon: "./assets/nodejs-icon.png",
     },
     {
       name: "Express Js",
@@ -63,7 +63,6 @@ export default function Services() {
           </div>
         ))}
       </div>
-      
     </div>
   );
 }

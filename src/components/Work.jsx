@@ -104,7 +104,7 @@ The Recipes App is a modern and interactive frontend application that allows use
     },
     {
       id: "3",
-      name: "Frontend Project",
+      name: "Full Stack Project",
       icon: "./assets/work-32.png",
       image: "./assets/work-3.png",
       projectName: "Smart Expense Tracker",
@@ -158,6 +158,61 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
       tech3: "javascript",
       tech4: "context-api",
     },
+    {
+      id: "4",
+      name: "Full Stack Project",
+      icon: "./assets/work-4.png",
+      image: "./assets/work-41.png",
+      projectName:
+        "WChatApp — Real-Time MERN Chat Application with Smart Notifications & Responsive UX",
+      description:
+        "WChatApp is a real-time MERN chat application with instant messaging, smart notifications, and a fully responsive UI optimized for both desktop and mobile devices.",
+      fullDescription: `WChatApp is a production-oriented real-time chat application developed using the MERN stack, designed to deliver a fast, scalable, and user-friendly messaging experience.
+
+The application supports secure user authentication and enables both one-to-one and group conversations with real-time message delivery powered by Socket.IO. It includes advanced interaction features such as live typing indicators, online/offline user presence tracking, and automatic message synchronization.
+
+A core highlight of the application is its smart notification system, which provides real-time alerts for incoming messages with unread counts and quick navigation to conversations. This ensures users stay updated without actively monitoring chats.
+
+The user interface is fully responsive and optimized for multiple devices. On mobile, the sidebar transforms into a slide-in drawer with overlay control, ensuring smooth navigation and better usability. Messages are displayed with structured grouping, timestamps, and sender differentiation for clarity.
+
+This project demonstrates strong full-stack development skills, including API design, state management using React Context API, and real-time communication handling. It reflects the ability to build scalable applications with a focus on performance and user experience.
+Frontend
+
+React.js
+Tailwind CSS
+
+Backend
+
+Node.js
+Express.js
+
+Database
+
+MongoDB
+
+Real-Time Communication
+
+Socket.IO
+
+Authentication
+
+JWT (JSON Web Token)
+
+Other Tools & Libraries
+
+Axios (API calls)
+React Hot Toast (notifications UI)
+date-fns (time formatting)`,
+      link: "https://wchatapp.netlify.app/",
+      github: "https://github.com/JayapriyaSiakumar/ChattingApp",
+      backendLink: "https://chatingapp-backend-5iaz.onrender.com/",
+      backendGithub: "https://github.com/JayapriyaSiakumar/ChatingApp-Backend",
+      tech1: "react",
+      tech2: "tailwindcss",
+      tech3: "socket.io",
+      tech4: "context-api",
+      tech5: "nodejs",
+    },
   ];
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
@@ -208,7 +263,8 @@ The Smart Expense Tracker is a clean and efficient frontend application designed
                   Under Development
                 </span> */}
               </div>
-              <p className="mb-4 text-sm font-normal text-gray-600 leading-relaxed truncate line-clamp-4">
+              {/* truncate line-clamp-10 */}
+              <p className="mb-4 text-sm font-normal text-gray-600 leading-relaxed ">
                 {work.description}
               </p>
               {/* Links */}
