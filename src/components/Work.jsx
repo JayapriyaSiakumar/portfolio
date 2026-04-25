@@ -6,7 +6,7 @@ export default function Work() {
   const work = [
     {
       id: "1",
-      projectName: "Go-Eventz",
+      projectName: "Go-Eventz - Full Stack",
       icon: "./assets/work-1.jfif",
       image: "./assets/work-1.png",
       description:
@@ -23,7 +23,7 @@ React, TailwindCSS, Redux Toolkit, Node.js, Express.js, MongoDB, Stripe API`,
       backendGithub: "https://github.com/JayapriyaSiakumar/GoEvent-Backend",
       tech: ["React", "Tailwind", "Node", "MongoDB", "Stripe"],
     },
-    {
+    /*{
       id: "2",
       projectName: "Recipes App",
       icon: "./assets/work-2.jpg",
@@ -38,10 +38,39 @@ React, TailwindCSS, MealsDB API`,
       link: "https://meals-app-bay.vercel.app/",
       github: "https://github.com/JayapriyaSiakumar/mealsApp",
       tech: ["React", "Tailwind", "axios", "meals db"],
+    },*/
+    {
+      id: "2",
+      projectName: "FruitVerse - Frontend",
+      icon: "./assets/work-5.jpg",
+      image: "./assets/work-51.png",
+      description:
+        "A modern fruit-based product platform offering healthy, natural foods with a clean UI and seamless shopping experience.",
+
+      fullDescription: `🔹 Full Description
+  FruitVerse is a modern web application designed to showcase and sell fruit-based products such as fresh juices, organic jams, dried fruits, and smoothies. The platform focuses on promoting healthy living by combining visually appealing design with a smooth and intuitive user experience.
+
+  Users can explore a categorized product catalog, view detailed product information, and manage their shopping cart effortlessly. The application emphasizes responsiveness and performance, ensuring a consistent experience across mobile, tablet, and desktop devices.
+
+  The UI is crafted using a vibrant, fruit-inspired color palette to reflect freshness and energy, while the component-based architecture ensures scalability and maintainability. The project demonstrates strong frontend engineering practices, including reusable components, state management, and clean code organization.
+
+  🔹 Key Features
+  • Product listing with category-based filtering  
+  • Detailed product view with pricing and descriptions  
+  • Add to cart and dynamic cart updates  
+  • Responsive design for all screen sizes  
+  • Reusable and modular component structure  
+
+  🔹 Tech Stack
+  React, TailwindCSS, React Router, Context API`,
+
+      link: "https://fruits-web-one.vercel.app/",
+      github: "https://github.com/JayapriyaSiakumar/Fruits-Web",
+      tech: ["React", "Tailwind", "Context API", "Vite"],
     },
     {
       id: "3",
-      projectName: "Smart Expense Tracker",
+      projectName: "MERN Smart Expense Tracker",
       icon: "./assets/work-32.png",
       image: "./assets/work-3.png",
       description:
@@ -60,7 +89,7 @@ React, Context API, Recharts, TailwindCSS`,
     },
     {
       id: "4",
-      projectName: "WchatApp",
+      projectName: "WchatApp - Full Stack",
       icon: "./assets/work-4.png",
       image: "./assets/work-41.png",
       description:
@@ -97,64 +126,135 @@ date-fns (time formatting)`,
   ];
 
   return (
-    <div id="work" className="w-full px-4 sm:px-8 lg:px-[10%] py-16">
-      <h2 className="text-center text-3xl sm:text-4xl font-bold mb-10">
-        My Projects
-      </h2>
+    <>
+      <div id="work" className="w-full px-4 sm:px-8 lg:px-[10%] py-16">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold mb-10">
+          My Projects
+        </h2>
 
-      {/* ✅ GRID FIX */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {work.map((item) => (
+        {/* ✅ GRID FIX */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {work.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => setSelectedWork(item)}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer flex flex-col overflow-hidden">
+              {/* Image */}
+              <img
+                src={item.icon}
+                alt={item.projectName}
+                className="w-full h-44 object-cover"
+              />
+
+              {/* Content */}
+              <div className="p-5 flex flex-col flex-1">
+                <h3 className="text-lg font-semibold text-blue-600 mb-2">
+                  {item.projectName}
+                </h3>
+
+                <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                  {item.description}
+                </p>
+
+                {/* Links */}
+                <div className="flex gap-4 text-sm mt-auto">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-blue-500 hover:underline">
+                    🔗 Demo
+                  </a>
+
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-700 hover:underline">
+                    🐙 GitHub
+                  </a>
+                </div>
+                {item.backendLink && (
+                  <div className="flex gap-4 text-sm mt-2">
+                    <a
+                      href={item.backendLink}
+                      target="_blank"
+                      className="text-blue-500">
+                      🔗 Backend
+                    </a>
+
+                    <a
+                      href={item.backendGithub}
+                      target="_blank"
+                      className="text-gray-700">
+                      🐙 Backend GitHub
+                    </a>
+                  </div>
+                )}
+
+                {/* Tech */}
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {item.tech.map((t, i) => (
+                    <span
+                      key={i}
+                      className="text-xs px-2 py-1 bg-gray-200 rounded-full">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ✅ MODAL FIX */}
+        {selectedWork && (
           <div
-            key={item.id}
-            onClick={() => setSelectedWork(item)}
-            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer flex flex-col overflow-hidden">
-            {/* Image */}
-            <img
-              src={item.icon}
-              alt={item.projectName}
-              className="w-full h-44 object-cover"
-            />
+            onClick={() => setSelectedWork(null)}
+            className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50">
+            <div
+              onClick={(e) => e.stopPropagation()}
+              className="bg-white w-full max-w-3xl rounded-2xl p-6 overflow-y-auto max-h-[90vh]">
+              <h2 className="text-xl font-bold text-blue-600 mb-4">
+                {selectedWork.projectName}
+              </h2>
 
-            {/* Content */}
-            <div className="p-5 flex flex-col flex-1">
-              <h3 className="text-lg font-semibold text-blue-600 mb-2">
-                {item.projectName}
-              </h3>
+              <img
+                src={selectedWork.image}
+                className="w-full h-52 object-cover rounded-lg mb-4"
+              />
 
-              <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                {item.description}
+              <p className="text-gray-600 text-sm mb-4">
+                {selectedWork.fullDescription}
               </p>
 
-              {/* Links */}
-              <div className="flex gap-4 text-sm mt-auto">
+              <div className="flex gap-4 text-sm">
                 <a
-                  href={item.link}
+                  href={selectedWork.link}
                   target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500 hover:underline">
-                  🔗 Demo
+                  className="text-blue-500">
+                  🔗 Frontend
                 </a>
 
                 <a
-                  href={item.github}
+                  href={selectedWork.github}
                   target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-700 hover:underline">
+                  className="text-gray-700">
                   🐙 GitHub
                 </a>
               </div>
-              {item.backendLink && (
+
+              {selectedWork.backendLink && (
                 <div className="flex gap-4 text-sm mt-2">
                   <a
-                    href={item.backendLink}
+                    href={selectedWork.backendLink}
                     target="_blank"
                     className="text-blue-500">
                     🔗 Backend
                   </a>
 
                   <a
-                    href={item.backendGithub}
+                    href={selectedWork.backendGithub}
                     target="_blank"
                     className="text-gray-700">
                     🐙 Backend GitHub
@@ -164,7 +264,7 @@ date-fns (time formatting)`,
 
               {/* Tech */}
               <div className="flex flex-wrap gap-2 mt-4">
-                {item.tech.map((t, i) => (
+                {selectedWork.tech.map((t, i) => (
                   <span
                     key={i}
                     className="text-xs px-2 py-1 bg-gray-200 rounded-full">
@@ -174,77 +274,28 @@ date-fns (time formatting)`,
               </div>
             </div>
           </div>
-        ))}
+        )}
       </div>
 
-      {/* ✅ MODAL FIX */}
-      {selectedWork && (
-        <div
-          onClick={() => setSelectedWork(null)}
-          className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50">
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="bg-white w-full max-w-3xl rounded-2xl p-6 overflow-y-auto max-h-[90vh]">
-            <h2 className="text-xl font-bold text-blue-600 mb-4">
-              {selectedWork.projectName}
-            </h2>
+      <div className="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 className="text-center mb-2 text-lg font-Ovo">What i got</h4>
+        <h2 className="text-center text-5xl font-Ovo">My Certificate</h2>
+        <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+          Certified Full-Stack Developer with practical experience in building
+          responsive web applications and implementing core frontend and backend
+          functionalities using modern web technologies.
+        </p>
 
+        <div className="flex justify-center w-full ">
+          <div>
             <img
-              src={selectedWork.image}
-              className="w-full h-52 object-cover rounded-lg mb-4"
+              src="./assets/certificate.png"
+              className="w-full"
+              alt="certificate"
             />
-
-            <p className="text-gray-600 text-sm mb-4">
-              {selectedWork.fullDescription}
-            </p>
-
-            <div className="flex gap-4 text-sm">
-              <a
-                href={selectedWork.link}
-                target="_blank"
-                className="text-blue-500">
-                🔗 Frontend
-              </a>
-
-              <a
-                href={selectedWork.github}
-                target="_blank"
-                className="text-gray-700">
-                🐙 GitHub
-              </a>
-            </div>
-
-            {selectedWork.backendLink && (
-              <div className="flex gap-4 text-sm mt-2">
-                <a
-                  href={selectedWork.backendLink}
-                  target="_blank"
-                  className="text-blue-500">
-                  🔗 Backend
-                </a>
-
-                <a
-                  href={selectedWork.backendGithub}
-                  target="_blank"
-                  className="text-gray-700">
-                  🐙 Backend GitHub
-                </a>
-              </div>
-            )}
-
-            {/* Tech */}
-            <div className="flex flex-wrap gap-2 mt-4">
-              {selectedWork.tech.map((t, i) => (
-                <span
-                  key={i}
-                  className="text-xs px-2 py-1 bg-gray-200 rounded-full">
-                  {t}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
-      )}
-    </div>
+      </div>
+    </>
   );
 }
