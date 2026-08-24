@@ -41,36 +41,7 @@ React, TailwindCSS, MealsDB API`,
     },*/
     {
       id: "2",
-      projectName: "FruitVerse - Frontend",
-      icon: "./assets/work-5.jpg",
-      image: "./assets/work-51.png",
-      description:
-        "A modern fruit-based product platform offering healthy, natural foods with a clean UI and seamless shopping experience.",
-
-      fullDescription: `🔹 Full Description
-  FruitVerse is a modern web application designed to showcase and sell fruit-based products such as fresh juices, organic jams, dried fruits, and smoothies. The platform focuses on promoting healthy living by combining visually appealing design with a smooth and intuitive user experience.
-
-  Users can explore a categorized product catalog, view detailed product information, and manage their shopping cart effortlessly. The application emphasizes responsiveness and performance, ensuring a consistent experience across mobile, tablet, and desktop devices.
-
-  The UI is crafted using a vibrant, fruit-inspired color palette to reflect freshness and energy, while the component-based architecture ensures scalability and maintainability. The project demonstrates strong frontend engineering practices, including reusable components, state management, and clean code organization.
-
-  🔹 Key Features
-  • Product listing with category-based filtering  
-  • Detailed product view with pricing and descriptions  
-  • Add to cart and dynamic cart updates  
-  • Responsive design for all screen sizes  
-  • Reusable and modular component structure  
-
-  🔹 Tech Stack
-  React, TailwindCSS, React Router, Context API`,
-
-      link: "https://fruits-web-one.vercel.app/",
-      github: "https://github.com/JayapriyaSiakumar/Fruits-Web",
-      tech: ["React", "Tailwind", "Context API", "Vite"],
-    },
-    {
-      id: "3",
-      projectName: "MERN Smart Expense Tracker",
+      projectName: "Expense Tracker - Full Stack",
       icon: "./assets/work-32.png",
       image: "./assets/work-3.png",
       description:
@@ -89,7 +60,7 @@ React, Context API, Recharts, TailwindCSS`,
       tech: ["React", "Context API", "Recharts"],
     },
     {
-      id: "4",
+      id: "3",
       projectName: "WchatApp - Full Stack",
       icon: "./assets/work-4.png",
       image: "./assets/work-41.png",
@@ -123,6 +94,35 @@ date-fns (time formatting)`,
       backendLink: "https://chatingapp-backend-5iaz.onrender.com/",
       backendGithub: "https://github.com/JayapriyaSiakumar/ChatingApp-Backend",
       tech: ["React", "Context API", "Socket.io", "nodejs", "mongodb"],
+    },
+    {
+      id: "4",
+      projectName: "FruitVerse - Frontend",
+      icon: "./assets/work-5.jpg",
+      image: "./assets/work-51.png",
+      description:
+        "A modern fruit-based product platform offering healthy, natural foods with a clean UI and seamless shopping experience.",
+
+      fullDescription: `🔹 Full Description
+  FruitVerse is a modern web application designed to showcase and sell fruit-based products such as fresh juices, organic jams, dried fruits, and smoothies. The platform focuses on promoting healthy living by combining visually appealing design with a smooth and intuitive user experience.
+
+  Users can explore a categorized product catalog, view detailed product information, and manage their shopping cart effortlessly. The application emphasizes responsiveness and performance, ensuring a consistent experience across mobile, tablet, and desktop devices.
+
+  The UI is crafted using a vibrant, fruit-inspired color palette to reflect freshness and energy, while the component-based architecture ensures scalability and maintainability. The project demonstrates strong frontend engineering practices, including reusable components, state management, and clean code organization.
+
+  🔹 Key Features
+  • Product listing with category-based filtering  
+  • Detailed product view with pricing and descriptions  
+  • Add to cart and dynamic cart updates  
+  • Responsive design for all screen sizes  
+  • Reusable and modular component structure  
+
+  🔹 Tech Stack
+  React, TailwindCSS, React Router, Context API`,
+
+      link: "https://fruits-web-one.vercel.app/",
+      github: "https://github.com/JayapriyaSiakumar/Fruits-Web",
+      tech: ["React", "Tailwind", "Context API", "Vite"],
     },
   ];
 
