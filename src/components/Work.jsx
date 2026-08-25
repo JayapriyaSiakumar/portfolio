@@ -164,7 +164,7 @@ date-fns (time formatting)`,
                     target="_blank"
                     rel="noreferrer"
                     className="text-blue-500 hover:underline">
-                    🔗 Demo
+                    🔗 Frontend
                   </a>
 
                   <a
