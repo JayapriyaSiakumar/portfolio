@@ -51,7 +51,7 @@ The Smart Expense Tracker is a responsive financial management application that 
 Users can add, edit, and delete transactions while monitoring their financial trends through dynamic graphs. The app uses Context API for lightweight state management and focuses on clean UI and performance.
 🔹 Tech Stack
 React, Context API, Recharts, TailwindCSS`,
-      link: "https://smarexpensetracker.netlify.app/",
+      link: "https://smart-expense-tracker-frontend-lovat.vercel.app/",
       github:
         "https://github.com/JayapriyaSiakumar/SmartExpenseTracker-Frontend",
       backendLink: "https://smartexpensetracker-backend-4zyg.onrender.com/",
